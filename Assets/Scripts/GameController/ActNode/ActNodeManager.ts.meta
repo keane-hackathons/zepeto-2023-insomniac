@@ -20,14 +20,15 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    NetManager_1 = require(\"../../GameManager/NetManager\");\r\nconst ActNodeConfirmedModel_1
-    = require(\"./ActNodeConfirmedModel\");\r\nconst ActNodeGameMatch_1 = require(\"./ActNodeGameMatch\");\r\nconst
-    ActNodeGameOver_1 = require(\"./ActNodeGameOver\");\r\nconst ActNodeGameRoundOver_1
-    = require(\"./ActNodeGameRoundOver\");\r\nconst ActNodeGameStart_1 = require(\"./ActNodeGameStart\");\r\nconst
-    ActNodeGameWait_1 = require(\"./ActNodeGameWait\");\r\nconst ActNodePeakMoment_1
-    = require(\"./ActNodePeakMoment\");\r\nclass ActNodeManager extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.ActiveNode_GameStateMap
-    = new Map();\r\n    }\r\n    InitActNodeMap() {\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.GameWait,
+    NetManager_1 = require(\"../../GameManager/NetManager\");\r\nconst ActNodeBase_1
+    = require(\"./ActNodeBase\");\r\nconst ActNodeConfirmedModel_1 = require(\"./ActNodeConfirmedModel\");\r\nconst
+    ActNodeGameMatch_1 = require(\"./ActNodeGameMatch\");\r\nconst ActNodeGameOver_1
+    = require(\"./ActNodeGameOver\");\r\nconst ActNodeGameRoundOver_1 = require(\"./ActNodeGameRoundOver\");\r\nconst
+    ActNodeGameStart_1 = require(\"./ActNodeGameStart\");\r\nconst ActNodeGameWait_1
+    = require(\"./ActNodeGameWait\");\r\nconst ActNodePeakMoment_1 = require(\"./ActNodePeakMoment\");\r\nclass
+    ActNodeManager extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.ActiveNode_GameStateMap = new
+    Map();\r\n    }\r\n    InitActNodeMap() {\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.GameWait,
     new ActNodeGameWait_1.default());\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.GameMatch,
     new ActNodeGameMatch_1.default());\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.GameStart,
     new ActNodeGameStart_1.default());\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.ConfirmedModel,
@@ -35,6 +36,6 @@ ScriptedImporter:
     new ActNodeGameOver_1.default());\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.GameRoundOver,
     new ActNodeGameRoundOver_1.default());\r\n        this.ActiveNode_GameStateMap.set(NetManager_1.GameState.PeakMoment,
     new ActNodePeakMoment_1.default());\r\n    }\r\n}\r\nexports.default = ActNodeManager;\r\n//#
-    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0Tm9kZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBY3ROb2RlTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2REFBeUQ7QUFFekQsbUVBQTREO0FBQzVELHlEQUFrRDtBQUNsRCx1REFBZ0Q7QUFDaEQsaUVBQTBEO0FBQzFELHlEQUFrRDtBQUNsRCx1REFBZ0Q7QUFDaEQsMkRBQW9EO0FBQ3BELE1BQXFCLGNBQWUsU0FBUSxxQ0FBcUI7SUFBakU7O1FBQ1csNEJBQXVCLEdBQUcsSUFBSSxHQUFHLEVBQXVCLENBQUM7SUFVcEUsQ0FBQztJQVRHLGNBQWM7UUFDVixJQUFJLENBQUMsdUJBQXVCLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsUUFBUSxFQUFFLElBQUkseUJBQWUsRUFBRSxDQUFDLENBQUM7UUFDNUUsSUFBSSxDQUFDLHVCQUF1QixDQUFDLEdBQUcsQ0FBQyxzQkFBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLDBCQUFnQixFQUFFLENBQUMsQ0FBQztRQUM5RSxJQUFJLENBQUMsdUJBQXVCLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsU0FBUyxFQUFFLElBQUksMEJBQWdCLEVBQUUsQ0FBQyxDQUFDO1FBQzlFLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxHQUFHLENBQUMsc0JBQVMsQ0FBQyxjQUFjLEVBQUUsSUFBSSwrQkFBcUIsRUFBRSxDQUFDLENBQUM7UUFDeEYsSUFBSSxDQUFDLHVCQUF1QixDQUFDLEdBQUcsQ0FBQyxzQkFBUyxDQUFDLFFBQVEsRUFBRSxJQUFJLHlCQUFlLEVBQUUsQ0FBQyxDQUFDO1FBQzVFLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxHQUFHLENBQUMsc0JBQVMsQ0FBQyxhQUFhLEVBQUUsSUFBSSw4QkFBb0IsRUFBRSxDQUFDLENBQUM7UUFDdEYsSUFBSSxDQUFDLHVCQUF1QixDQUFDLEdBQUcsQ0FBQyxzQkFBUyxDQUFDLFVBQVUsRUFBRSxJQUFJLDJCQUFpQixFQUFFLENBQUMsQ0FBQztJQUNwRixDQUFDO0NBQ0o7QUFYRCxpQ0FXQyJ9","assetPath":"Assets/Scripts/GameController/ActNode/ActNodeManager.ts","manifest":{"properties":[],"name":"ActNodeManager","description":"","hasAnimatorMove":false},"isCompiled":true}'
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0Tm9kZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJBY3ROb2RlTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCw2REFBeUQ7QUFDekQsK0NBQXdDO0FBQ3hDLG1FQUE0RDtBQUM1RCx5REFBa0Q7QUFDbEQsdURBQWdEO0FBQ2hELGlFQUEwRDtBQUMxRCx5REFBa0Q7QUFDbEQsdURBQWdEO0FBQ2hELDJEQUFvRDtBQUNwRCxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0lBQWpFOztRQUNXLDRCQUF1QixHQUFHLElBQUksR0FBRyxFQUF1QixDQUFDO0lBVXBFLENBQUM7SUFURyxjQUFjO1FBQ1YsSUFBSSxDQUFDLHVCQUF1QixDQUFDLEdBQUcsQ0FBQyxzQkFBUyxDQUFDLFFBQVEsRUFBRSxJQUFJLHlCQUFlLEVBQUUsQ0FBQyxDQUFDO1FBQzVFLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxHQUFHLENBQUMsc0JBQVMsQ0FBQyxTQUFTLEVBQUUsSUFBSSwwQkFBZ0IsRUFBRSxDQUFDLENBQUM7UUFDOUUsSUFBSSxDQUFDLHVCQUF1QixDQUFDLEdBQUcsQ0FBQyxzQkFBUyxDQUFDLFNBQVMsRUFBRSxJQUFJLDBCQUFnQixFQUFFLENBQUMsQ0FBQztRQUM5RSxJQUFJLENBQUMsdUJBQXVCLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsY0FBYyxFQUFFLElBQUksK0JBQXFCLEVBQUUsQ0FBQyxDQUFDO1FBQ3hGLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxHQUFHLENBQUMsc0JBQVMsQ0FBQyxRQUFRLEVBQUUsSUFBSSx5QkFBZSxFQUFFLENBQUMsQ0FBQztRQUM1RSxJQUFJLENBQUMsdUJBQXVCLENBQUMsR0FBRyxDQUFDLHNCQUFTLENBQUMsYUFBYSxFQUFFLElBQUksOEJBQW9CLEVBQUUsQ0FBQyxDQUFDO1FBQ3RGLElBQUksQ0FBQyx1QkFBdUIsQ0FBQyxHQUFHLENBQUMsc0JBQVMsQ0FBQyxVQUFVLEVBQUUsSUFBSSwyQkFBaUIsRUFBRSxDQUFDLENBQUM7SUFDcEYsQ0FBQztDQUNKO0FBWEQsaUNBV0MifQ==","assetPath":"Assets/Scripts/GameController/ActNode/ActNodeManager.ts","manifest":{"properties":[],"name":"ActNodeManager","description":"","hasAnimatorMove":false},"isCompiled":true}'
   typescriptHash: 6e600e260909b5c32f40fb9f4ccac4b0
   onlyWriteTrigger: 0

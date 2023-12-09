@@ -19,13 +19,14 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst GameMain_1 = require(\"../../GameMain\");\r\nconst
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    GameMain_1 = require(\"../../GameMain\");\r\nconst UIToast_1 = require(\"../../UI/UIToast\");\r\nconst
     ActNodeBase_1 = require(\"./ActNodeBase\");\r\n/**\r\n * Behavior processing:
     Confirm transformation model\r\n */\r\nclass ActNodeConfirmedModel extends ActNodeBase_1.default
     {\r\n    Check() {\r\n        // if (GameMain.Instance.GetGameState() == GameState.GameWait)
     {\r\n        //     this.StopCoroutine(this.CoRun());\r\n        //     return
     true;\r\n        // }\r\n        return false;\r\n    }\r\n    *CoRun() {\r\n       
     GameMain_1.default.Instance.mUIManager.OnConfirmedModel();\r\n    }\r\n}\r\nexports.default
-    = ActNodeConfirmedModel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0Tm9kZUNvbmZpcm1lZE1vZGVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQWN0Tm9kZUNvbmZpcm1lZE1vZGVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQ0EsNkNBQXNDO0FBRXRDLCtDQUF3QztBQUN4Qzs7R0FFRztBQUNILE1BQXFCLHFCQUFzQixTQUFRLHFCQUFXO0lBQzFELEtBQUs7UUFDRCxnRUFBZ0U7UUFDaEUsd0NBQXdDO1FBQ3hDLG1CQUFtQjtRQUNuQixJQUFJO1FBQ0osT0FBTyxLQUFLLENBQUM7SUFDakIsQ0FBQztJQUNELENBQUMsS0FBSztRQUNGLGtCQUFRLENBQUMsUUFBUSxDQUFDLFVBQVUsQ0FBQyxnQkFBZ0IsRUFBRSxDQUFDO0lBQ3BELENBQUM7Q0FFSjtBQVpELHdDQVlDIn0=","assetPath":"Assets/Scripts/GameController/ActNode/ActNodeConfirmedModel.ts","manifest":{"properties":[],"name":"ActNodeConfirmedModel","description":"","hasAnimatorMove":false},"isCompiled":true}'
+    = ActNodeConfirmedModel;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQWN0Tm9kZUNvbmZpcm1lZE1vZGVsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQWN0Tm9kZUNvbmZpcm1lZE1vZGVsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZDQUFzQztBQUN0Qyw4Q0FBdUM7QUFDdkMsK0NBQXdDO0FBQ3hDOztHQUVHO0FBQ0gsTUFBcUIscUJBQXNCLFNBQVEscUJBQVc7SUFDMUQsS0FBSztRQUNELGdFQUFnRTtRQUNoRSx3Q0FBd0M7UUFDeEMsbUJBQW1CO1FBQ25CLElBQUk7UUFDSixPQUFPLEtBQUssQ0FBQztJQUNqQixDQUFDO0lBQ0QsQ0FBQyxLQUFLO1FBQ0Ysa0JBQVEsQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLGdCQUFnQixFQUFFLENBQUM7SUFDcEQsQ0FBQztDQUVKO0FBWkQsd0NBWUMifQ==","assetPath":"Assets/Scripts/GameController/ActNode/ActNodeConfirmedModel.ts","manifest":{"properties":[],"name":"ActNodeConfirmedModel","description":"","hasAnimatorMove":false},"isCompiled":true}'
   typescriptHash: b6ed7c44ef6320d2889a517834c1e667
   onlyWriteTrigger: 0

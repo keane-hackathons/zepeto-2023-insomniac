@@ -23,7 +23,7 @@ ScriptedImporter:
     GameMain_1 = require(\"../../GameMain\");\r\nconst UIToast_1 = require(\"../../UI/UIToast\");\r\nconst
     AudioController_1 = require(\"../AudioController\");\r\nconst ActNodeBase_1 =
     require(\"./ActNodeBase\");\r\n/**\r\n * Behavior processing: Confirm transformation
-    model\r\n\r\n */\r\nclass ActNodeGameMatch extends ActNodeBase_1.default {\r\n   
+    model\r\n\n */\r\nclass ActNodeGameMatch extends ActNodeBase_1.default {\r\n   
     Check() {\r\n        // if (GameMain.Instance.GetGameState() == GameState.GameWait)
     {\r\n        //     this.StopCoroutine(this.CoRun());\r\n        //     return
     true;\r\n        // }\r\n        return false;\r\n    }\r\n    *CoRun() {\r\n       

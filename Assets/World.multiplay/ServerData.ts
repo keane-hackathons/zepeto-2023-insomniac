@@ -137,57 +137,57 @@ export default class ServerData {
     /**
      * Game rule configuration
      */
-    static GAME_RULE_JSON = "{\n" +
-        "    \"roundNumber\":3,\n" + // Number of game rounds.(- Add Indicate)
-        "    \"roundLength\":300,\n" + // Game duration in seconds GameRoundLength-second
-        "    \"roundOverDelay\":8,\n" + // Round ending wait delay 
-        "    \"gameOverDelay\":10,\n" + // Game ending wait delay 
-        "    \"peakMomentLength\":60,\n" + // Peak moment duration in seconds Peak time Length-second
-        "    \"minPlayer\":4,\n" + // Minimum number of players
-        "    \"maxPlayer\":12,\n" + // Maximum number of players
-        "    \"isTest\":0,\n" + // Test the game process alone
-        "    \"matchDelay\":30,\n" + // Match Delay
-        "    \"modelDelay\":30,\n" + // Model Delay
-        "    \"opendoorDelay\":30,\n" + // Door Open Delay
-        "    \"initHP\":150,\n" + // Initial HP
-        "    \"initBuf\":2,\n" + // Initial Buff 
-        "    \"buffCD\":20,\n" + // Buff Duration time
-        "    \"peekHP\":100,\n" + // Buff Duration time
-        "    \"randomModelCost\":30,\n" + // Star point cost for random item
-        "    \"buffDuration\":5,\n" + // Buff Duration time 
-        "    \"hunterWinScore\":200,\n" + // Seeker Victory Point
-        "    \"hunterNumScore\":300,\n" + // Point when Seeker find 1 hider
-        "    \"hiderLiveScore\":2,\n" + // Hider survival seconds point 
-        "    \"hiderWinScore\":100,\n" + //  Hider Victory point
-        "    \"hunterNumStar\":1,\n" + //  Seeker finds hider to increase Star point 
-        "    \"addStarInerval\":120\n" + //  Hider increase Star Interval
-        "}";
+    // static GAME_RULE_JSON = "{\n" +
+    //     "    \"roundNumber\":3,\n" + // Number of game rounds.(- Add Indicate)
+    //     "    \"roundLength\":300,\n" + // Game duration in seconds GameRoundLength-second
+    //     "    \"roundOverDelay\":8,\n" + // Round ending wait delay 
+    //     "    \"gameOverDelay\":10,\n" + // Game ending wait delay 
+    //     "    \"peakMomentLength\":60,\n" + // Peak moment duration in seconds Peak time Length-second
+    //     "    \"minPlayer\":4,\n" + // Minimum number of players
+    //     "    \"maxPlayer\":12,\n" + // Maximum number of players
+    //     "    \"isTest\":0,\n" + // Test the game process alone
+    //     "    \"matchDelay\":30,\n" + // Match Delay
+    //     "    \"modelDelay\":30,\n" + // Model Delay
+    //     "    \"opendoorDelay\":30,\n" + // Door Open Delay
+    //     "    \"initHP\":150,\n" + // Initial HP
+    //     "    \"initBuf\":2,\n" + // Initial Buff 
+    //     "    \"buffCD\":20,\n" + // Buff Duration time
+    //     "    \"peekHP\":100,\n" + // Buff Duration time
+    //     "    \"randomModelCost\":30,\n" + // Star point cost for random item
+    //     "    \"buffDuration\":5,\n" + // Buff Duration time 
+    //     "    \"hunterWinScore\":200,\n" + // Seeker Victory Point
+    //     "    \"hunterNumScore\":300,\n" + // Point when Seeker find 1 hider
+    //     "    \"hiderLiveScore\":2,\n" + // Hider survival seconds point 
+    //     "    \"hiderWinScore\":100,\n" + //  Hider Victory point
+    //     "    \"hunterNumStar\":1,\n" + //  Seeker finds hider to increase Star point 
+    //     "    \"addStarInerval\":120\n" + //  Hider increase Star Interval
+    //     "}";
 
     //for test
-    // static GAME_RULE_JSON = "{\n" +
-    //     "    \"roundNumber\":1,\n" +
-    //     "    \"roundLength\":60,\n" +
-    //     "    \"roundOverDelay\":8,\n" +
-    //     "    \"gameOverDelay\":10,\n" +
-    //     "    \"peakMomentLength\":30,\n" +
-    //     "    \"minPlayer\":2,\n" +
-    //     "    \"maxPlayer\":12,\n" +
-    //     "    \"isTest\":0,\n" +
-    //     "    \"matchDelay\":10,\n" +
-    //     "    \"modelDelay\":10,\n" +
-    //     "    \"opendoorDelay\":10,\n" +
-    //     "    \"initHP\":150,\n" +
-    //     "    \"initBuf\":2,\n" +
-    //     "    \"buffCD\":20,\n" +
-    //     "    \"peekHP\":100,\n" +
-    //     "    \"randomModelCost\":30,\n" +
-    //     "    \"buffDuration\":5,\n" +
-    //     "    \"hunterWinScore\":200,\n" +
-    //     "    \"hunterNumScore\":300,\n" +
-    //     "    \"hiderLiveScore\":2,\n" +
-    //     "    \"hiderWinScore\":100,\n" +
-    //     "    \"hunterNumStar\":0.5,\n" +
-    //     "    \"addStarInerval\":120\n" +
-    //     "}";
+    static GAME_RULE_JSON = "{\n" +
+        "    \"roundNumber\":1,\n" +
+        "    \"roundLength\":60,\n" +
+        "    \"roundOverDelay\":8,\n" +
+        "    \"gameOverDelay\":10,\n" +
+        "    \"peakMomentLength\":30,\n" +
+        "    \"minPlayer\":2,\n" +
+        "    \"maxPlayer\":12,\n" +
+        "    \"isTest\":0,\n" +
+        "    \"matchDelay\":10,\n" +
+        "    \"modelDelay\":10,\n" +
+        "    \"opendoorDelay\":10,\n" +
+        "    \"initHP\":150,\n" +
+        "    \"initBuf\":2,\n" +
+        "    \"buffCD\":20,\n" +
+        "    \"peekHP\":100,\n" +
+        "    \"randomModelCost\":30,\n" +
+        "    \"buffDuration\":5,\n" +
+        "    \"hunterWinScore\":200,\n" +
+        "    \"hunterNumScore\":300,\n" +
+        "    \"hiderLiveScore\":2,\n" +
+        "    \"hiderWinScore\":100,\n" +
+        "    \"hunterNumStar\":0.5,\n" +
+        "    \"addStarInerval\":120\n" +
+        "}";
 
 }
