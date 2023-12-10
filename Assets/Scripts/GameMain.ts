@@ -86,7 +86,7 @@ export default class GameMain extends ZepetoScriptBehaviour {
 
         // Dynamically loading scenes
         // this.AsyncSceneProgress = SceneManager.LoadSceneAsync("GameScene", LoadSceneMode.Additive);
-        this.AsyncSceneProgress = SceneManager.LoadSceneAsync("004_Camping", LoadSceneMode.Additive);
+        this.AsyncSceneProgress = SceneManager.LoadSceneAsync("Dungeon", LoadSceneMode.Additive);
 
         // Behavior machine management initialization
         this.actNodeManager = new ActNodeManager();

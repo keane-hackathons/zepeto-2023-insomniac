@@ -3,36 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ZepetoObject
-  - IconTrigger
-  - ObjectArea
-  - Wall
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - ZepetoObject
+  - 
   - Water
   - UI
-  - Environment
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - Player
-  - RTPlayer
-  - TeamSign
+  - OnlyWithPlayer
+  - InteractionSystem
+  - Combat
+  - MapSystem
+  - PreRendered
+  - Platforming
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -44,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: TeamSign
-    uniqueID: 1289901897
     locked: 0
