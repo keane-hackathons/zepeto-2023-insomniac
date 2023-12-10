@@ -171,7 +171,7 @@ export default class ServerData {
         "    \"gameOverDelay\":10,\n" +
         "    \"peakMomentLength\":30,\n" +
         "    \"minPlayer\":2,\n" +
-        "    \"maxPlayer\":12,\n" +
+        "    \"maxPlayer\":4,\n" +
         "    \"isTest\":0,\n" +
         "    \"matchDelay\":10,\n" +
         "    \"modelDelay\":10,\n" +

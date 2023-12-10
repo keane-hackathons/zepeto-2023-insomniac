@@ -94,8 +94,10 @@ export default class MapManager extends BaseManager {
      * @returns 
      */
     OnFinishLoad(userId: any) {
-        let door = GameObject.Find("Room_BG/Door");
+        // let door = GameObject.Find("Room_BG/Door");
+        let door = GameObject.Find("Floor1/WallHolder/StartDoor");
         if (door != null) {
+            console.log("OnFinishLoad:: Found StartDoor!")
             this.mStartAngle = door.transform.eulerAngles;
             this.mReadyWall = door;
             this.mReadyWall.transform.eulerAngles = this.mEndAngle;
